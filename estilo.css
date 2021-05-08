@@ -1,0 +1,153 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+    --dourado: #F7B239;    
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* ELEMENTOS BASICOS */
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color:white;    
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imgLogo{
+    margin-top: 5px;
+}
+
+.logo{
+    font-family: 'Arial Black', Times;
+    font-size: 40px; 
+     color: var(--dourado);
+    margin-left: 20px;
+}
+ 
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* FILME PRINCIPAL*/ 
+.filmePrincipal{
+    font-size: 16px;
+    background: url('img/capa-inicial.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.descricao{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    max-width: 50%;
+    align-items: center;
+}
+
+#inicio{
+    display:inline;
+}
+
+.classificacaoP{
+    margin-left: 20px;
+    color: var(--dourado);
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main h3.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+}
+.botao{
+    background-color: var(--preto);
+    border: none;
+    color:white;
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 20px;
+    
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;    
+    transition: 1s ease all;
+}
+
+.botao i{
+    margin-right: 7px;
+}
+
+.containerF{
+   margin-left: 30px;
+   width: 60%;
+}
+
+.carroselFilme{
+    height: 100%;
+    width: 100%;
+    display: flexbox;
+    margin-top: 5px;
+}
+
+.C1{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+    margin-top: 2%;
+}
+
+#INFO{
+    display: none;
+    margin-top: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    justify-content:right;
+    align-items:baseline;    
+    margin-left: 2%;
+    margin-bottom: 10%;
+    position:static;
+}
+
+.info1{
+    font-size: 15px;
+    color: white;
+    width: 50%;
+}
+
+.info2{
+    font-size: 10px;
+    color:rgb(185, 185, 185);
+    flex-direction: column;
+}
+
+.info3{
+    font-size: 12px;
+}

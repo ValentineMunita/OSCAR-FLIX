@@ -1,0 +1,50 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #000000;
+    --dourado: #F7B239;
+}
+
+*{
+    margin:50;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header.container{
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+#linkInd{
+    color: var(--dourado);
+    text-decoration: none;
+}
+
+.video-container {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    justify-self: center;
+    margin:10px 0px;
+    max-width: 100%;
+    height: auto;
+    
+   }
+   .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   }
